@@ -9,7 +9,26 @@ body {
 }
 .title {
     text-align: center;
-    margin-top: 10em;
+    margin-top: 8em;
+}
+img {
+    width: auto ;
+    max-width: 90% ;
+    height: auto ;
+    display: block;
+    margin: auto;
+}
+.img-text-box {
+    display: flex;
+    flex-direction: column;
+}
+.img-text-box p.img-text {
+    padding-top: 2em;
+    font-size: 1rem;
+    text-justify: inter-word;
+    max-width: 80%;
+    margin: auto;
+    text-align: left;
 }
 .slider {
     text-align: center;
@@ -21,5 +40,20 @@ body {
     text-align: center;
 }
 .glide__arrows {
+    margin-top: 1.5em;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.glide__arrows button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+.glide__arrow {
+    font-size: 2rem;
 }
