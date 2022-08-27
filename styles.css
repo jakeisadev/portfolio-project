@@ -3,3 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #FBF7F5;
+    font-family: 'Nunito', sans-serif;
+}
+.title {
+    text-align: center;
+    margin-top: 10em;
+}
+.slider {
+    text-align: center;
+}
+.container .glide .glide__track .glide__slides {
+    margin-top: 2em;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+}
+.glide__arrows {
+    text-align: center;
+}
