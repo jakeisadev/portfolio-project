@@ -9,9 +9,19 @@ body {
 }
 .title {
     text-align: center;
-    margin-top: 8em;
+    margin-top: 5em;
+}
+nav ul.nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-top: 1em;
 }
 img {
+    width: 55px;
+    height: 40px;
+}
+.container img {
     width: auto ;
     max-width: 90% ;
     height: auto ;
@@ -22,6 +32,9 @@ img {
     display: flex;
     flex-direction: column;
 }
+.img-text-box .large {
+    font-size: 1.1rem;
+}
 .img-text-box p.img-text {
     padding-top: 2em;
     font-size: 1rem;
@@ -29,6 +42,7 @@ img {
     max-width: 80%;
     margin: auto;
     text-align: left;
+    word-spacing: .2rem;
 }
 .slider {
     text-align: center;
@@ -40,7 +54,6 @@ img {
     text-align: center;
 }
 .glide__arrows {
-    margin-top: 1.5em;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -54,6 +67,6 @@ img {
     overflow: hidden;
     outline: none;
 }
-.glide__arrow {
+.glide__arrows .glide__arrow {
     font-size: 2rem;
 }
