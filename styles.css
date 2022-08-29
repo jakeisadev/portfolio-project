@@ -100,6 +100,7 @@ nav ul.nav-list li {
     width: 80%;
     margin: auto;
     margin-bottom: 1em;
+    margin-top: 1em;
     justify-content: center;
 }
 .skill-img {

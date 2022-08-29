@@ -1,19 +1,37 @@
+// VARIABLES
+
+const skillContainer = document.getElementById("skill-container");
+const educationContainer = document.getElementById("education-container");
+const skills = document.getElementById("skills");
+const education = document.getElementById("education");
+const resume = document.getElementById("resume");
+
+
+
 // EVENT LISTENERS
 
-document.getElementById("skills").addEventListener('click', () => {
-    document.getElementById("skill-container").style.display = 'flex';
-    document.getElementById("education-container").style.display = 'none';
+skills.addEventListener('click', () => {
+    skillContainer.style.display = 'flex';
+    educationContainer.style.display = 'none';
 })
 
-document.getElementById("education").addEventListener('click', () => {
-    document.getElementById("skill-container").style.display = 'none';
-    document.getElementById("education-container").style.display = 'flex';
+education.addEventListener('click', () => {
+    skillContainer.style.display = 'none';
+    educationContainer.style.display = 'flex';
 })
 
-document.getElementById("resume").addEventListener('click', () => {
-    document.getElementById("skill-container").style.display = 'none';
-    document.getElementById("education-container").style.display = 'none';
+resume.addEventListener('click', () => {
+    skillContainer.style.display = 'none';
+    educationContainer.style.display = 'none';
 })
+
+//Hiding containers if clicked outside.
+
+window.onclick = function(e){
+  if(e.target != skills) skillContainer.style.display = 'none';
+  if(e.target != education) educationContainer.style.display = 'none';
+}
+
 
 // TYPEWRITER.JS
 
@@ -21,14 +39,14 @@ var app = document.getElementById('app');
 
 var typewriter = new Typewriter(app, {
     loop: true,
-    deleteSpeed: 500,
-    delay: 80
+    deleteSpeed: 300,
+    delay: 70
 });
 
 typewriter.typeString("Hey there! It's a pleasure to meet you.")
-    .pauseFor(1000)
+    .pauseFor(500)
     .deleteAll()
     .typeString("Here's a little bit about me. Thanks for visiting!")
-    .pauseFor(1000)
+    .pauseFor(500)
     .deleteAll()
     .start();
