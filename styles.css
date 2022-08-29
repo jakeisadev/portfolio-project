@@ -4,18 +4,118 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #FBF7F5;
+    background-color: #fafafa;
     font-family: 'Nunito', sans-serif;
+    height: 100vh;
+}
+header {
+    background-color: #f1f5f9;
+    padding: 2em 0 1em 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
 }
 .title {
     text-align: center;
-    margin-top: 5em;
+    letter-spacing: .1rem;
+}
+.avatar {
+    width: 75px;
+    height: 75px;
+    display: block;
+    margin: auto;
+}
+.subtitle {
+    text-align: center;
+    margin-top: .8em;
+    font-size: 1rem;
+}
+.info-box {
+    margin-top: 2em;
+}
+.projects-title {
+    text-align: center;
+    margin-top: 1em;
+}
+nav {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 nav ul.nav-list {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     list-style-type: none;
-    padding-top: 1em;
+    margin: 0em 0 1em 0;
+    padding: .7em 0 .7em 0;
+    background-color: black;
+}
+nav ul.nav-list li {
+    cursor: pointer;
+}
+.nav-item {
+    color: white;
+}
+.skills,
+.education,
+.resume {
+    text-align: center;
+    padding: .6em 0 .6em 0;
+    background-color: #f5f5f5;
+    color: black;
+    width: 75%;
+    margin: auto;
+    margin-top: .2em;
+    cursor: pointer;
+    border: 3px solid rgba(0,0,0,.5);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+.skills:hover,
+.education:hover,
+.resume:hover {
+    transform: scale(1.01);
+}
+.skills-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: none;
+    animation: fadeIn 1.2s;
+        -webkit-animation: fadeIn 1.2s;
+        -moz-animation: fadeIn 1.2s;
+        -o-animation: fadeIn 1.2s;
+        -ms-animation: fadeIn 1.2s;
+}
+.education-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+.skill-img {
+    height: 75px;
+    width: 75px;
+}
+.education-img {
+    width: 200px;
+    height: 75px;
+    text-align: center;
+}
+#app {
+    margin: 1em .5em 1em .5em;
+    font-size: 2rem;
+    text-align: center;
+    height: 100px;
+}
+hr {
+    width: 80%;
+    margin: auto;
 }
 img {
     width: 55px;
@@ -48,10 +148,12 @@ img {
     text-align: center;
 }
 .container .glide .glide__track .glide__slides {
-    margin-top: 2em;
     list-style-type: none;
     text-decoration: none;
     text-align: center;
+}
+.glide__track {
+    margin-top: 3em;
 }
 .glide__arrows {
     text-align: center;
@@ -70,3 +172,43 @@ img {
 .glide__arrows .glide__arrow {
     font-size: 2rem;
 }
+/* KEYFRAMES */
+/* FADE-IN */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  /* FADE-IN-DOWN */
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+.fadeInDown {
+   -webkit-animation-name: fadeInDown;
+   animation-name: fadeInDown;
+ }
