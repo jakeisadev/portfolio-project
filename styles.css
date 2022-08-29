@@ -85,7 +85,7 @@ nav ul.nav-list li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: auto;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -96,11 +96,11 @@ nav ul.nav-list li {
         -o-animation: fadeIn 1.2s;
         -ms-animation: fadeIn 1.2s;
 }
-.education-container {
-    position: relative;
+#education-container {
     width: 80%;
     margin: auto;
     margin-bottom: 1em;
+    justify-content: center;
 }
 .skill-img {
     height: 75px;
