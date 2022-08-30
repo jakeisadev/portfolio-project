@@ -39,7 +39,7 @@ var app = document.getElementById('app');
 
 var typewriter = new Typewriter(app, {
     loop: true,
-    deleteSpeed: 300,
+    deleteSpeed: 200,
     delay: 70
 });
 
