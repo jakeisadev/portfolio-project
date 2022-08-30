@@ -234,9 +234,6 @@ form#contact div#emailHelp {
 form#contact .email-div {
     padding-top: 1em;
 }
-input {
-    border: 1px solid #DDD;
-}
 input[type="email"] {
     font-size: 1.2rem;
     display: block;
@@ -358,4 +355,9 @@ footer {
  #app {
     margin-bottom: .3em;
  }
+ .email-div input[type="email"],
+ textarea {
+    margin-top: .5em;
+    border: 1px solid #DDD;
+}
 }
