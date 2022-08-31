@@ -151,6 +151,9 @@ hr {
     margin-top: 2em;
     margin-bottom: 1em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
 }
 .modal-overlay {
     display: none;
