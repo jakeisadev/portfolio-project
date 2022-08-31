@@ -156,6 +156,10 @@ hr {
         -moz-appearance: none;
         appearance: none;
 }
+.recommendations:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
 .modal-overlay {
     display: none;
     position: fixed;
@@ -172,7 +176,7 @@ hr {
     border: 6px solid #dfdfdf;
     border-radius: 5px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     position: fixed;
     top: 50%;
@@ -182,17 +186,59 @@ hr {
     transform: translate(-50%, -50%);
 }
 .modal-content {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     position: relative;
+    overflow: scroll;
+    width: 95%;
+}
+.person-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.person-info-flex {
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+.person-info {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid gray;
+    margin-bottom: 1.5em;
+    text-align: left;
+    font-size: .7rem;
+}
+.person-name-job-relation {
+    margin-left: .7rem;
+}
+.person-name-job-relation p:first-child {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.person-text {
+    text-align: justify;
+    padding: 0 .8em 0 .8em;
+    margin-bottom: 1em;
+}
+.person-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 #close-btn {
     display: flex;
     justify-content: flex-end;
-    margin: .5em .5em 0 0;
-    font-size: 1.5rem;
+    margin: .1em .5em 0 0;
+    font-size: 2rem;
 }
 #modal {
     display: none;
+}
+#myModal-content {
+    height: 100%;
 }
 img {
     width: 55px;

@@ -8,6 +8,7 @@ const resume = document.getElementById("resume");
 const recommendationsButton = document.getElementById("recommendations");
 const modal = document.getElementById("modal");
 const close = document.getElementById("close-btn");
+const modalContent = document.getElementById("myModal-content");
 
 // EVENT LISTENERS
 
@@ -52,7 +53,6 @@ window.onclick = function(e){
   if(e.target != skills) skillContainer.style.display = 'none';
   if(e.target != education) educationContainer.style.display = 'none';
 }
-
 
 // TYPEWRITER.JS
 
