@@ -5,8 +5,9 @@ const educationContainer = document.getElementById("education-container");
 const skills = document.getElementById("skills");
 const education = document.getElementById("education");
 const resume = document.getElementById("resume");
-
-
+const recommendationsButton = document.getElementById("recommendations");
+const modal = document.getElementById("modal");
+const close = document.getElementById("close-btn");
 
 // EVENT LISTENERS
 
@@ -24,6 +25,26 @@ resume.addEventListener('click', () => {
     skillContainer.style.display = 'none';
     educationContainer.style.display = 'none';
 })
+
+recommendationsButton.addEventListener('click', () => {
+    modal.style.display = "block";
+})
+
+ //Close Modal
+
+close.addEventListener('click', function(e){
+    modal.style.display = "none";
+})
+
+//Hiding Modal if clicked outside.
+
+modal.onclick = function(e){
+    if(e.target == close) 
+    console.log('closed by x');
+    if(e.target != close)
+    console.log('closed by window'); 
+    modal.style.display = "none";
+}
 
 //Hiding containers if clicked outside.
 

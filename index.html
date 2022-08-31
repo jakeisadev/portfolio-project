@@ -52,17 +52,38 @@
         </div>
         <h2 class="resume" id="resume" onclick="window.open('documents/resume.pdf', '_blank')">Resume</h2>
         </div>
-        <img src="images/website.webp" class="web-img" alt="image of people building a website">
-            <h2 class="about">About Me</h2>
+        <img src="images/website.webp" class="web-img" alt="image of people building a website, press refresh on iOS to show image.">
+            <h2 class="about">[ About Me ]</h2>
             <div class="about-box">
             <p class="about-text">
-                My name is Jacob Starowicz. I've been teaching myself Web Development for close to a year. I've also worked through a
+                My name is Jacob Starowicz, but I go by Jake. I've been teaching myself Web Development for close to a year. I've also worked through a
                 professional program where I earned a techdegree from Team Treehouse in Front End Web Development.
                 To add, I possess certificates and experience in responsive web design, data structures and algorithms for JavaScript, as
                 well as SEO and Digital marketing.
             </p>
-        </div>
-        <h2 class="projects-title">Projects</h2>
+            <button class="recommendations" id="recommendations">Why Jake?</button>
+            <!-- Modal -->
+            <div class="modal-overlay" id="modal">
+                <!-- Modal COntent -->
+                <div class="modal-container">
+                    <div class="modal-content" id="content">
+                        <div class="close-div"> 
+                            <span id="close-btn" class="close">&times;</span> 
+                        </div>
+                        <div id="myModal-content">
+                        
+                            
+                        </div>
+                        <!-- <div class="arrows">
+                            <img src="arrow-left.png"  alt="left arrow" class="arrow-left" id="left">
+                            <img src="arrow-right.png" alt="right arrow" class="arrow-right" id="right">
+                          </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Modal -->
+            </div>
+        <h2 class="projects-title">[ Projects ]</h2>
         <div class="container">
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">
@@ -107,13 +128,13 @@
                         </div>
                     </ul>
                     <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&#8678;</button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&#8680;</button>
+                        <!-- <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="images/left-swipe.png" alt=""></button> -->
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="images/swipe-right.jpg.jpg" alt=""></button>
                     </div>
                 </div>
               </div>
         </div>
-        <img src="images/database.webp" class="database-img" alt="database image">
+        <img src="images/database.webp" class="database-img" alt="database image, press refresh on iOS to show image.">
         <form id="contact">
             <h3>Contact</h3>
             <hr>
