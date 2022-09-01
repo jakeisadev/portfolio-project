@@ -36,6 +36,8 @@
         </nav>
         <div id="app"></div>
         <hr>
+        <div class="skills-and-about-container">
+            <div class="skills-and-website-img-container">
         <div class="info-box" id="info-box">
             <h2 class="skills" id="skills">Skills</h2>
             <div class="skills-container fadeInDown" id="skill-container">
@@ -53,6 +55,8 @@
         <h2 class="resume" id="resume" onclick="window.open('documents/resume.pdf', '_blank')">Resume</h2>
         </div>
         <img src="images/website.webp" class="web-img" alt="image of people building a website, press refresh on iOS to show image.">
+        </div>
+        <div class="about-me-title-and-text-container">
             <h2 class="about">[ About Me ]</h2>
             <div class="about-box">
             <p class="about-text">
@@ -62,6 +66,7 @@
                 well as SEO and Digital marketing.
             </p>
             <button class="recommendations" id="recommendations">Why Jake?</button>
+            </div>
             <!-- Modal -->
             <div class="modal-overlay" id="modal">
                 <!-- Modal COntent -->
@@ -171,14 +176,17 @@
                 </div>
             </div>
             <!-- End Modal -->
-            </div>
+        </div>
+    </div>
+    <div class="projects-and-form-container">
+        <div class="projects-parts-container">
         <h2 class="projects-title">[ Projects ]</h2>
         <div class="container">
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
                         <div class="img-text-box">
-                        <li class="glide__slide"><img src="images/mugs-coffee-1.jpg" alt="Mug's Coffee Project">
+                        <li class="glide__slide"><img src="images/mugs-coffee-1.jpg" class="glide-img" alt="Mug's Coffee Project">
                             <p class="img-text">
                                 <strong><span class="large">Mugs Coffee:</span></strong> Is a site I made for a local coffee shop that I frequent in Charlotte, NC.
                                 The owner Oliver suggested I make a site as practice, so this is the result!
@@ -187,7 +195,7 @@
                         </li>
                         </div>
                         <div class="img-text-box">
-                        <li class="glide__slide"><img src="images/fabricks.jpg" alt="ECOM project named Fabricks">
+                        <li class="glide__slide"><img src="images/fabricks.jpg" class="glide-img" alt="ECOM project named Fabricks">
                             <p class="img-text">
                                 <strong><span class="large">Fabricks (Work in progress)</span>:</strong> This ECOM application is being built
                                 with React, and will feature the use of a fake store REST API as well as modals,
@@ -197,7 +205,7 @@
                         </li>
                         </div>
                         <div class="img-text-box">
-                        <li class="glide__slide"><img src="images/dashboard-1.jpg" alt="Dashboard Project">
+                        <li class="glide__slide"><img src="images/dashboard-1.jpg" class="glide-img" alt="Dashboard Project">
                             <p class="img-text">
                                 <strong><span class="large">Dashboard</span>:</strong> Includes chart.js, SVG's, and general javascript integration
                                 to make the site more interactive for the user. It also features a form section where
@@ -207,7 +215,7 @@
                         </li>
                         </div>
                         <div class="img-text-box">
-                        <li class="glide__slide"><img src="images/gallery-1.jpg" alt="Gallery Project">
+                        <li class="glide__slide"><img src="images/gallery-1.jpg" class="glide-img" alt="Gallery Project">
                             <p class="img-text">
                                 <strong><span class="large">Professional Gallery:</span></strong> Utilizes Unsplash REST API and filesaver.js to create a UX where
                                 they can tap on the description of a photo, activate a modal, and save the desired
@@ -220,9 +228,11 @@
                         <!-- <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="images/left-swipe.png" alt=""></button> -->
                         <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="images/swipe-right.jpg.jpg" alt=""></button>
                     </div>
+                    </div>
                 </div>
               </div>
         </div>
+        <div class="database-img-and-form-container">
         <img src="images/database.webp" class="database-img" alt="database image, press refresh on iOS to show image.">
         <form id="contact">
             <h3>Contact</h3>
@@ -237,6 +247,8 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
+          </div>
+          </div>
           <footer>
             &#169; Jacob Starowicz 2022
           </footer>

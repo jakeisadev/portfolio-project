@@ -181,8 +181,8 @@ hr {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 80%;
-    height: 50%;
+    width: 85%;
+    height: 65%;
     transform: translate(-50%, -50%);
 }
 .modal-content {
@@ -209,7 +209,7 @@ hr {
     border-top: 1px solid gray;
     margin-bottom: 1.5em;
     text-align: left;
-    font-size: .7rem;
+    font-size: .9rem;
 }
 .person-name-job-relation {
     margin-left: .7rem;
@@ -264,6 +264,11 @@ img {
     height: auto ;
     display: block;
     margin: auto;
+    border-radius: 5px;
+}
+.glide-img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, 
+                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .img-text-box {
     display: flex;
@@ -457,16 +462,70 @@ footer {
    animation-name: fadeInDown;
  }
  /* MEDIA QUERIES */
- @media (min-width: 375px) and (max-width: 475px) {
+ @media (min-width: 320px) and (max-width: 374px) {
+.person-text {
+    font-size: 1.1rem;
+    }
+ }
+ @media (min-width: 375px) and (max-width: 481px) {
  .skills-container {
     justify-content: space-around;
- }
+    }
  #app {
     margin-bottom: .3em;
- }
- .email-div input[type="email"],
- textarea {
+    }
+.email-div input[type="email"],
+textarea {
     margin-top: .5em;
     border: 1px solid #DDD;
+    }
+    .person-text {
+        font-size: 1.2rem;
+    }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+    #app {
+        height: 52px;
+    }
+    .recommendations,
+    .skills,
+    .education,
+    .resume,
+    .skills-container {
+        width: 50%;
+    }
+    .about-box {
+        width: 70%;
+    }
+    .about-text {
+        font-size: 1.5rem;
+    }
+    .person-img {
+        width: 75px;
+        height: 75px;
+    }
+    .person-name-job-relation {
+        font-size: 1.2rem;
+    }
+    .person-text {
+        font-size: 1.3rem;
+    }
+    .about,
+    .projects-title,
+    .database-img {
+        margin-top: 3em;
+    }
+    .img-text-box .large {
+        font-size: 1.5rem;
+    }
+    .img-text-box p.img-text {
+        font-size: 1.4rem;
+    }
+    .glide__arrows img {
+        width: 150px;
+        height: 150px;
+    }
+    form#contact {
+        max-width: 70%;
+    }
 }
