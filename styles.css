@@ -236,6 +236,11 @@ hr {
 }
 #modal {
     display: none;
+    animation: fadeIn .3s;
+        -webkit-animation: fadeIn .3s;
+        -moz-animation: fadeIn .3s;
+        -o-animation: fadeIn .3s;
+        -ms-animation: fadeIn .3s;
 }
 #myModal-content {
     height: 100%;
@@ -467,6 +472,9 @@ footer {
     font-size: 1.1rem;
     }
  }
+ .hide-until-desktop {
+    display: none;
+}
  @media (min-width: 375px) and (max-width: 481px) {
  .skills-container {
     justify-content: space-around;
@@ -482,10 +490,16 @@ textarea {
     .person-text {
         font-size: 1.2rem;
     }
+    .hide-until-desktop {
+        display: none;
+    }
 }
 @media (min-width: 481px) and (max-width: 768px) {
     #app {
         height: 52px;
+    }
+    .hide-until-desktop {
+        display: none;
     }
     .recommendations,
     .skills,
@@ -536,6 +550,9 @@ textarea {
     .skills-container {
         width: 60%;
     }
+    .hide-until-desktop {
+        display: none;
+    }
     .info-box {
         width:50%;
         margin-top: 3.8em;
@@ -575,12 +592,116 @@ textarea {
         width: 65%;
         font-size: 1.4rem;
     }
+    .img-text-box .large {
+        font-size: 1.5rem;
+    }
     .glide__arrows img {
         width: 175px;
         height: 175px;
     }
     form#contact {
         width: 65%;
+    }
+    label[for="Email"] {
+        font-size: 1.4rem;
+    }
+    form#contact div#emailHelp {
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 1025px) and (max-width: 2000px) {
+    #app {
+        height: 40px;
+    }
+    .skills-container {
+        width: 60%;
+    }
+    .info-box {
+        width:50%;
+        margin-top: 3.8em;
+    }
+    .skills-and-website-img-container {
+        display: flex;
+    }
+    .web-img {
+        width: 450px;
+        height: 325px;
+    }
+    .about,
+    .projects-title {
+        font-size: 1.8rem;
+    }
+    .about,
+    .projects-title {
+        margin-top: 3em;
+    }
+    .recommendations {
+        width: 50%;
+    }
+    .projects-parts-container {
+        width: 55%;
+        height: 50%;
+    }
+    .hide-until-desktop {
+        display: block;
+    }
+    .hide-after-tablet {
+        display: none;
+    }
+    .test {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .database-img {
+        width: 400px;
+        height: 300px;
+        margin: auto;
+    }
+    .person-img {
+        width: 75px;
+        height: 75px;
+    }
+    .person-name-job-relation {
+        font-size: 1.2rem;
+    }
+    .person-text {
+        font-size: 1.3rem;
+    }
+    .glide-img {
+        width: 65% !important;
+    }
+    .img-text-box p.img-text {
+        width: 65%;
+        font-size: 1.4rem;
+    }
+    .img-text-box .large {
+        font-size: 1.5rem;
+    }
+    .recommendations {
+        width: 25%;
+    }
+    .recommendations:hover {
+        transform: scale(1.01);
+    }
+    .modal-container {
+        width: 35%;
+        height: 65%;
+    }
+    .about-me-title-and-text-container {
+        width: 65%;
+        margin: auto;
+    }
+    .img-text-box p.img-text {
+        width: 65%;
+        font-size: 1.4rem;
+    }
+    form#contact {
+        margin-top: 2em;
+        width: 50%;
+    }
+    form#contact button {
+        width: 50%;
     }
     label[for="Email"] {
         font-size: 1.4rem;
