@@ -475,6 +475,12 @@ footer {
  .hide-until-desktop {
     display: none;
 }
+.projects-title {
+    margin-top: 2em;
+}
+.database-img {
+    margin-top: 3em;
+}
  @media (min-width: 375px) and (max-width: 481px) {
  .skills-container {
     justify-content: space-around;
@@ -492,6 +498,12 @@ textarea {
     }
     .hide-until-desktop {
         display: none;
+    }
+    .projects-title {
+        margin-top: 2em;
+    }
+    .database-img {
+        margin-top: 3em;
     }
 }
 @media (min-width: 481px) and (max-width: 768px) {
