@@ -1,265 +1,268 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.css">
-        <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/fontawesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" 
-        integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/41acc27a8b.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header>
-            <h1 class="title">Jacob Starowicz</h1>
-            <img src="images/jakeavatar.png" class="avatar" alt="avatar of jacob starowicz">
-            <h2 class="subtitle">< Front End Web Developer /></h2>
-        </header>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="https://www.youtube.com/channel/UCJubnEonnxEHu-t_pMaWZWw" target="_blank"><i class="fa-brands fa-youtube fa-2x nav-item"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/jacob-starowicz/" target="_blank"><i class="fa-brands fa-linkedin fa-2x nav-item"></i></a></li>
-                <li><a href="https://github.com/jakeisadev" target="_blank"><i class="fa-brands fa-github fa-2x nav-item"></i></a></li>
-            </ul>
-        </nav>
-        <div id="app"></div>
-        <hr>
-        <div class="skills-and-about-container">
-            <div class="skills-and-website-img-container">
-        <div class="info-box" id="info-box">
-            <h2 class="skills" id="skills">Skills</h2>
-            <div class="skills-container fadeInDown" id="skill-container">
-                <img src="images/html.png" class="skill-img" alt="hmtl logo">
-                <img src="images/css.png" class="skill-img" alt="css logo">
-                <img src="images/js.png" class="skill-img" alt="javascript logo">
-                <img src="images/bootstrap.png" class="skill-img" alt="bootstrap logo">
-                <img src="images/sass.png" class="skill-img" alt="sass logo">
-                <img src="images/react.png" class="skill-img" alt="react logo">
-            </div>
-            <h2 class="education" id="education">Education</h2>
-            <div class="skills-container fadeInDown" id="education-container">
-                <img src="images/treehouse.png" class="education-img" alt="">
-        </div>
-        <h2 class="resume" id="resume" onclick="window.open('documents/resume.pdf', '_blank')">Resume</h2>
-        </div>
-        <img src="images/website.webp" class="web-img" alt="image of people building a website, press refresh on iOS to show image.">
-        </div>
-        <div class="about-me-title-and-text-container">
-            <h2 class="about">[ About Me ]</h2>
-            <div class="about-box">
-            <p class="about-text">
-                My name is Jacob Starowicz, but I go by Jake. I've been teaching myself Web Development for close to a year. I've also worked through a
-                professional program where I earned a techdegree from Team Treehouse in Front End Web Development.
-                To add, I possess certificates and experience in responsive web design, data structures and algorithms for JavaScript, as
-                well as SEO and Digital marketing.
-            </p>
-            <button class="recommendations" id="recommendations">Why Jake?</button>
-            </div>
-            <!-- Modal -->
-            <div class="modal-overlay" id="modal">
-                <!-- Modal COntent -->
-                <div class="modal-container">
-                    <div class="modal-content" id="content">
-                        <div class="close-div"> 
-                            <span id="close-btn" class="close">&times;</span> 
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+   <![endif]-->
+   <!--[if IE 7]>         
+   <html class="no-js lt-ie9 lt-ie8">
+      <![endif]-->
+      <!--[if IE 8]>         
+      <html class="no-js lt-ie9">
+         <![endif]-->
+         <!--[if gt IE 8]>      
+         <html class="no-js">
+            <![endif]-->
+            <html>
+               <head>
+                  <meta charset="utf-8">
+                  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                  <title></title>
+                  <meta name="description" content="">
+                  <meta name="viewport" content="width=device-width, initial-scale=1">
+                  <link rel="stylesheet" href="styles.css">
+                  <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.css">
+                  <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/fontawesome.min.css">
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" 
+                     integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" 
+                     crossorigin="anonymous" referrerpolicy="no-referrer" />
+                  <link rel="preconnect" href="https://fonts.googleapis.com">
+                  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+                  <script src="https://kit.fontawesome.com/41acc27a8b.js" crossorigin="anonymous"></script>
+               </head>
+               <body>
+                  <header>
+                     <h1 class="title">Jacob Starowicz</h1>
+                     <img src="images/jakeavatar.png" class="avatar" alt="avatar of jacob starowicz">
+                     <h2 class="subtitle">< Front End Web Developer /></h2>
+                  </header>
+                  <nav class="nav">
+                     <ul class="nav-list">
+                        <li><a href="https://www.youtube.com/channel/UCJubnEonnxEHu-t_pMaWZWw" target="_blank"><i class="fa-brands fa-youtube fa-2x nav-item"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/jacob-starowicz/" target="_blank"><i class="fa-brands fa-linkedin fa-2x nav-item"></i></a></li>
+                        <li><a href="https://github.com/jakeisadev" target="_blank"><i class="fa-brands fa-github fa-2x nav-item"></i></a></li>
+                     </ul>
+                  </nav>
+                  <div id="app"></div>
+                  <hr>
+                  <div class="skills-and-about-container">
+                     <div class="skills-and-website-img-container">
+                        <div class="info-box" id="info-box">
+                           <h2 class="skills" id="skills">Skills</h2>
+                           <div class="skills-container fadeInDown" id="skill-container">
+                              <img src="images/html.png" class="skill-img" alt="hmtl logo">
+                              <img src="images/css.png" class="skill-img" alt="css logo">
+                              <img src="images/js.png" class="skill-img" alt="javascript logo">
+                              <img src="images/bootstrap.png" class="skill-img" alt="bootstrap logo">
+                              <img src="images/sass.png" class="skill-img" alt="sass logo">
+                              <img src="images/react.png" class="skill-img" alt="react logo">
+                           </div>
+                           <h2 class="education" id="education">Education</h2>
+                           <div class="skills-container fadeInDown" id="education-container">
+                              <img src="images/treehouse.png" class="education-img" alt="">
+                           </div>
+                           <h2 class="resume" id="resume" onclick="window.open('documents/resume.pdf', '_blank')">Resume</h2>
                         </div>
-                        <div id="myModal-content">
-                           <div class="person-box">
-                            <div class="person-info">
-                                <div class="person-info-flex">
-                                    <img src="images/michael-duran.jpeg" class="person-img" alt="One of Jake's mentors">
-                                    <div class="person-name-job-relation">
-                                        <p>Michael Duran</p>
-                                        <p>Software Engineer @USAA</p>
-                                        <p>💻 Michael was Jacob’s mentor</p>
+                        <img src="images/website.webp" class="web-img" alt="image of people building a website, press refresh on iOS to show image.">
+                     </div>
+                     <div class="about-me-title-and-text-container">
+                        <h2 class="about">[ About Me ]</h2>
+                        <div class="about-box">
+                           <p class="about-text">
+                              My name is Jacob Starowicz, but I go by Jake. I've been teaching myself Web Development for close to a year. I've also worked through a
+                              professional program where I earned a techdegree from Team Treehouse in Front End Web Development.
+                              To add, I possess certificates and experience in responsive web design, data structures and algorithms for JavaScript, as
+                              well as SEO and Digital marketing.
+                           </p>
+                           <button class="recommendations" id="recommendations">Why Jake?</button>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal-overlay" id="modal">
+                           <!-- Modal COntent -->
+                           <div class="modal-container">
+                              <div class="modal-content" id="content">
+                                 <div class="close-div"> 
+                                    <span id="close-btn" class="close">&times;</span> 
+                                 </div>
+                                 <div id="myModal-content">
+                                    <div class="person-box">
+                                       <div class="person-info">
+                                          <div class="person-info-flex">
+                                             <img src="images/michael-duran.jpeg" class="person-img" alt="One of Jake's mentors">
+                                             <div class="person-name-job-relation">
+                                                <p>Michael Duran</p>
+                                                <p>Software Engineer @USAA</p>
+                                                <p>💻 Michael was Jacob’s mentor</p>
+                                             </div>
+                                          </div>
+                                          <p class="person-text">
+                                             "Jacob Starowicz is an aspiring developer that has been in contact with me
+                                             for several months. I have helped guide him on his journey; he has come a
+                                             long way since we first met. He has a core understanding of HTML, CSS, and
+                                             JavaScript from the projects I have reviewed. It is my professional belief
+                                             that he will be a great asset to any team. He is technically savvy and has a
+                                             very positive attitude. In addition, he is very approachable, and from my
+                                             management perspective, approachable people are suitable for any team that
+                                             wants to succeed. Overall, Jacob is an excellent candidate for any company
+                                             looking for a software developer for their team."
+                                          </p>
+                                       </div>
+                                       <div class="person-info">
+                                          <div class="person-info-flex">
+                                             <img src="images/murtaza-ahmad.jpeg" class="person-img" alt="One of Jake's mentors">
+                                             <div class="person-name-job-relation">
+                                                <p>Murtaza Ahmad</p>
+                                                <p>Freelance Software Developer @Upwork</p>
+                                                <p>Murtaza was Jacob’s mentor</p>
+                                             </div>
+                                          </div>
+                                          <p class="person-text">
+                                             "Jacob has been one of the most dedicated and hardworking individuals when it comes
+                                             to development and programming. He is self-motivated and very humble, and his
+                                             dedication to learning programming separates him from the rest."
+                                          </p>
+                                       </div>
+                                       <div class="person-info">
+                                          <div class="person-info-flex">
+                                             <img src="images/dom-vargas.jpeg" class="person-img" alt="One of Jake's mentors">
+                                             <div class="person-name-job-relation">
+                                                <p>Dominique Vargas</p>
+                                                <p>Tech Recruiter @ Recruiting Experiences</p>
+                                                <p>Dominique was Jacob’s mentor</p>
+                                             </div>
+                                          </div>
+                                          <p class="person-text">
+                                             "I have worked with Jacob to create career development resources for early career software engineering talent. 
+                                             Jacob is an extremely motivated person. In his work he envisions what he wants to gain from the experience, establishes goals, and sets out to crush them. As he transitions into a career as a web developer he has created a YouTube page and a Discord community to give back and help other engineers develop their coding & interviewing skills and improve their mentalities. 
+                                             Jacob embodies the Air Force core values: Integrity First, Service Before Self, & Excellence. Jacob is the type of developer who utilizes all internal and external resources, and is relentless in his pursuit to write code that makes websites clean, modern & engaging for customers.
+                                             I recommend hiring Jacob for front-end/web development positions where he can utilize his growing expertise with HTML, CSS, JavaScript & Bootstrap."
+                                          </p>
+                                       </div>
+                                       <div class="person-info">
+                                          <div class="person-info-flex">
+                                             <img src="images/jeremy.jpeg" class="person-img" alt="One of Jake's mentors">
+                                             <div class="person-name-job-relation">
+                                                <p>Jeremy Max</p>
+                                                <p>Software Developer</p>
+                                                <p>Jeremy and Jacob studied together</p>
+                                             </div>
+                                          </div>
+                                          <p class="person-text">
+                                             "I've seen many individuals aspire to become developers of the course of my career, but I am confident in stating that Jacob is a cut above the rest. His willingness to make things better and not just leave them the way they are is always inspiring to see and by extension his eagerness to learn about new technologies such as React that may be a better fit for a project is always great. He understands that problems don't always have a binary solution and thus he is always open-minded to learn things from different angles.
+                                             If you haven't worked with him yet, I definitely recommend you do soon, because it's likely you won't be able to afford his time and services in the future."
+                                          </p>
+                                       </div>
+                                       <div class="person-info">
+                                          <div class="person-info-flex">
+                                             <img src="images/luke-hovee.jpeg" class="person-img" alt="One of Jake's mentors">
+                                             <div class="person-name-job-relation">
+                                                <p>Luke Hovee</p>
+                                                <p>I help aspiring juniors get into software</p>
+                                                <p>Luke was Jacob’s mentor</p>
+                                             </div>
+                                          </div>
+                                          <p class="person-text">
+                                             "Jacob reached out to me here on LinkedIn and we've gotten to know each other. I reviewed his portfolio site and he is well on his way to being a talented Software Developer!
+                                             He has multiple projects that make API calls based on user input. This is something I think of as a next level software skill in the "seeking a first dev job" arena. He has other features displaying frontend chops, like modals, dynamically updating page content, and functional programming.
+                                             Jacob has a high emotional intelligence, is easy to talk to, smart, and has a genuine passion for coding.
+                                             Any company would be lucky to have him contributing to their success!"
+                                          </p>
+                                       </div>
                                     </div>
-                                </div>
-                                <p class="person-text">
-                                    "Jacob Starowicz is an aspiring developer that has been in contact with me
-                                    for several months. I have helped guide him on his journey; he has come a
-                                    long way since we first met. He has a core understanding of HTML, CSS, and
-                                    JavaScript from the projects I have reviewed. It is my professional belief
-                                    that he will be a great asset to any team. He is technically savvy and has a
-                                    very positive attitude. In addition, he is very approachable, and from my
-                                    management perspective, approachable people are suitable for any team that
-                                    wants to succeed. Overall, Jacob is an excellent candidate for any company
-                                    looking for a software developer for their team."
-                                </p>
-                            </div>
-                            <div class="person-info">
-                                <div class="person-info-flex">
-                                    <img src="images/murtaza-ahmad.jpeg" class="person-img" alt="One of Jake's mentors">
-                                    <div class="person-name-job-relation">
-                                        <p>Murtaza Ahmad</p>
-                                        <p>Freelance Software Developer @Upwork</p>
-                                        <p>Murtaza was Jacob’s mentor</p>
-                                    </div>
-                                </div>
-                                <p class="person-text">
-                                    "Jacob has been one of the most dedicated and hardworking individuals when it comes
-                                    to development and programming. He is self-motivated and very humble, and his
-                                    dedication to learning programming separates him from the rest."
-                                </p>
-                            </div>
-                            <div class="person-info">
-                                    <div class="person-info-flex">
-                                        <img src="images/dom-vargas.jpeg" class="person-img" alt="One of Jake's mentors">
-                                        <div class="person-name-job-relation">
-                                            <p>Dominique Vargas</p>
-                                            <p>Tech Recruiter @ Recruiting Experiences</p>
-                                            <p>Dominique was Jacob’s mentor</p>
-                                        </div>
-                                    </div>
-                                    <p class="person-text">
-                                        "I have worked with Jacob to create career development resources for early career software engineering talent. 
-
-                                        Jacob is an extremely motivated person. In his work he envisions what he wants to gain from the experience, establishes goals, and sets out to crush them. As he transitions into a career as a web developer he has created a YouTube page and a Discord community to give back and help other engineers develop their coding & interviewing skills and improve their mentalities. 
-                                        
-                                        Jacob embodies the Air Force core values: Integrity First, Service Before Self, & Excellence. Jacob is the type of developer who utilizes all internal and external resources, and is relentless in his pursuit to write code that makes websites clean, modern & engaging for customers.
-                                        
-                                        I recommend hiring Jacob for front-end/web development positions where he can utilize his growing expertise with HTML, CSS, JavaScript & Bootstrap."
-                                    </p>
-                                </div>
-                                <div class="person-info">
-                                    <div class="person-info-flex">
-                                        <img src="images/jeremy.jpeg" class="person-img" alt="One of Jake's mentors">
-                                        <div class="person-name-job-relation">
-                                            <p>Jeremy Max</p>
-                                            <p>Software Developer</p>
-                                            <p>Jeremy and Jacob studied together</p>
-                                        </div>
-                                    </div>
-                                    <p class="person-text">
-                                        "I've seen many individuals aspire to become developers of the course of my career, but I am confident in stating that Jacob is a cut above the rest. His willingness to make things better and not just leave them the way they are is always inspiring to see and by extension his eagerness to learn about new technologies such as React that may be a better fit for a project is always great. He understands that problems don't always have a binary solution and thus he is always open-minded to learn things from different angles.
-
-                                        If you haven't worked with him yet, I definitely recommend you do soon, because it's likely you won't be able to afford his time and services in the future."
-                                    </p>
-                                </div>
-                                <div class="person-info">
-                                    <div class="person-info-flex">
-                                        <img src="images/luke-hovee.jpeg" class="person-img" alt="One of Jake's mentors">
-                                        <div class="person-name-job-relation">
-                                            <p>Luke Hovee</p>
-                                            <p>I help aspiring juniors get into software</p>
-                                            <p>Luke was Jacob’s mentor</p>
-                                        </div>
-                                    </div>
-                                    <p class="person-text">
-                                        "Jacob reached out to me here on LinkedIn and we've gotten to know each other. I reviewed his portfolio site and he is well on his way to being a talented Software Developer!
-
-                                        He has multiple projects that make API calls based on user input. This is something I think of as a next level software skill in the "seeking a first dev job" arena. He has other features displaying frontend chops, like modals, dynamically updating page content, and functional programming.
-                                        
-                                        Jacob has a high emotional intelligence, is easy to talk to, smart, and has a genuine passion for coding.
-                                        
-                                        Any company would be lucky to have him contributing to their success!"
-                                    </p>
-                                </div>
-                            </div>
+                                 </div>
+                                 <!-- <div class="arrows">
+                                    <img src="arrow-left.png"  alt="left arrow" class="arrow-left" id="left">
+                                    <img src="arrow-right.png" alt="right arrow" class="arrow-right" id="right">
+                                    </div> -->
+                              </div>
+                           </div>
                         </div>
-                        <!-- <div class="arrows">
-                            <img src="arrow-left.png"  alt="left arrow" class="arrow-left" id="left">
-                            <img src="arrow-right.png" alt="right arrow" class="arrow-right" id="right">
-                          </div> -->
-                    </div>
-                </div>
-            </div>
-            <!-- End Modal -->
-        </div>
-    </div>
-    <div class="projects-and-form-container">
-        <div class="projects-parts-container">
-        <h2 class="projects-title">[ Projects ]</h2>
-        <div class="container">
-            <div class="glide">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides">
-                        <div class="img-text-box">
-                        <li class="glide__slide"><img src="images/mugs-coffee-1.jpg" class="glide-img" alt="Mug's Coffee Project">
-                            <p class="img-text">
-                                <strong><span class="large">Mugs Coffee:</span></strong> Is a site I made for a local coffee shop that I frequent in Charlotte, NC.
-                                The owner Oliver suggested I make a site as practice, so this is the result!
-                                I utilized HTML, CSS, and BootStrap with this one.
-                            </p>
-                        </li>
+                        <!-- End Modal -->
+                     </div>
+                  </div>
+                  <div class="projects-parts-container">
+                     <h2 class="projects-title">[ Projects ]</h2>
+                     <div class="container">
+                        <div class="glide">
+                           <div class="glide__track" data-glide-el="track">
+                              <ul class="glide__slides">
+                                 <div class="img-text-box">
+                                    <li class="glide__slide">
+                                       <img src="images/mugs-coffee-1.jpg" class="glide-img" alt="Mug's Coffee Project">
+                                       <p class="img-text">
+                                          <strong><span class="large">Mugs Coffee:</span></strong> Is a site I made for a local coffee shop that I frequent in Charlotte, NC.
+                                          The owner Oliver suggested I make a site as practice, so this is the result!
+                                          I utilized HTML, CSS, and BootStrap with this one.
+                                       </p>
+                                    </li>
+                                 </div>
+                                 <div class="img-text-box">
+                                    <li class="glide__slide">
+                                       <img src="images/fabricks.jpg" class="glide-img" alt="ECOM project named Fabricks">
+                                       <p class="img-text">
+                                          <strong><span class="large">Fabricks (Work in progress)</span>:</strong> This ECOM application is being built
+                                          with React, and will feature the use of a fake store REST API as well as modals,
+                                          stripe integration, login flow, and of course responsiveness. It has been launched
+                                          into a production environment through Heroku.
+                                       </p>
+                                    </li>
+                                 </div>
+                                 <div class="img-text-box">
+                                    <li class="glide__slide">
+                                       <img src="images/dashboard-1.jpg" class="glide-img" alt="Dashboard Project">
+                                       <p class="img-text">
+                                          <strong><span class="large">Dashboard</span>:</strong> Includes chart.js, SVG's, and general javascript integration
+                                          to make the site more interactive for the user. It also features a form section where
+                                          a user can save a message to an employee in local storage. You may also
+                                          search for an employee, as I there is a filtering mechanism coded in.
+                                       </p>
+                                    </li>
+                                 </div>
+                                 <div class="img-text-box">
+                                    <li class="glide__slide">
+                                       <img src="images/gallery-1.jpg" class="glide-img" alt="Gallery Project">
+                                       <p class="img-text">
+                                          <strong><span class="large">Professional Gallery:</span></strong> Utilizes Unsplash REST API and filesaver.js to create a UX where
+                                          they can tap on the description of a photo, activate a modal, and save the desired
+                                          photo to their device. I also used HTML, CSS, and BootStrap here too. (Getting filesaver.js
+                                          to work was a great challenge... Be sure to save a few photos!)
+                                    </li>
+                                 </div>
+                              </ul>
+                              <div class="glide__arrows" data-glide-el="controls">
+                                 <!-- <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="images/left-swipe.png" alt=""></button> -->
+                                 <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="images/swipe-right.jpg.jpg" alt=""></button>
+                              </div>
+                           </div>
                         </div>
-                        <div class="img-text-box">
-                        <li class="glide__slide"><img src="images/fabricks.jpg" class="glide-img" alt="ECOM project named Fabricks">
-                            <p class="img-text">
-                                <strong><span class="large">Fabricks (Work in progress)</span>:</strong> This ECOM application is being built
-                                with React, and will feature the use of a fake store REST API as well as modals,
-                                stripe integration, login flow, and of course responsiveness. It has been launched
-                                into a production environment through Heroku.
-                            </p>
-                        </li>
+                     </div>
+                  </div>
+                  <div class="database-img-and-form-container">
+                     <img src="images/database.webp" class="database-img" alt="database image, press refresh on iOS to show image.">
+                     <form id="contact">
+                        <h3>Contact</h3>
+                        <hr>
+                        <div class="mb-3 email-div">
+                           <label for="Email" class="form-label">Email address:</label>
+                           <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
+                           <div id="emailHelp" class="form-text">Tell me about yourself!</div>
                         </div>
-                        <div class="img-text-box">
-                        <li class="glide__slide"><img src="images/dashboard-1.jpg" class="glide-img" alt="Dashboard Project">
-                            <p class="img-text">
-                                <strong><span class="large">Dashboard</span>:</strong> Includes chart.js, SVG's, and general javascript integration
-                                to make the site more interactive for the user. It also features a form section where
-                                a user can save a message to an employee in local storage. You may also
-                                search for an employee, as I there is a filtering mechanism coded in.
-                            </p>
-                        </li>
+                        <div class="mb-3">
+                           <textarea name="" id="" cols="30" rows="10"></textarea>
                         </div>
-                        <div class="img-text-box">
-                        <li class="glide__slide"><img src="images/gallery-1.jpg" class="glide-img" alt="Gallery Project">
-                            <p class="img-text">
-                                <strong><span class="large">Professional Gallery:</span></strong> Utilizes Unsplash REST API and filesaver.js to create a UX where
-                                they can tap on the description of a photo, activate a modal, and save the desired
-                                photo to their device. I also used HTML, CSS, and BootStrap here too. (Getting filesaver.js
-                                to work was a great challenge... Be sure to save a few photos!)
-                        </li>
-                        </div>
-                    </ul>
-                    <div class="glide__arrows" data-glide-el="controls">
-                        <!-- <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="images/left-swipe.png" alt=""></button> -->
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="images/swipe-right.jpg.jpg" alt=""></button>
-                    </div>
-                    </div>
-                </div>
-              </div>
-        </div>
-        <div class="database-img-and-form-container">
-        <img src="images/database.webp" class="database-img" alt="database image, press refresh on iOS to show image.">
-        <form id="contact">
-            <h3>Contact</h3>
-            <hr>
-            <div class="mb-3 email-div">
-              <label for="Email" class="form-label">Email address:</label>
-              <input type="email" class="form-control" id="Email" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">Tell me about yourself!</div>
-            </div>
-            <div class="mb-3">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-          </div>
-          </div>
-          <footer>
-            &#169; Jacob Starowicz 2022
-          </footer>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-        <script src="script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-        <script>
-            new Glide('.glide').mount()
-        </script>
-    </body>
-</html>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                     </form>
+                  </div>
+                  <footer>
+                     &#169; Jacob Starowicz 2022
+                  </footer>
+                  <!--[if lt IE 7]>
+                  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+                  <![endif]-->
+                  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+                  <script src="script.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+                  <script>
+                     new Glide('.glide').mount()
+                  </script>
+               </body>
+            </html>

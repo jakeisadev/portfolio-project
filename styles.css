@@ -529,3 +529,63 @@ textarea {
         max-width: 70%;
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    #app {
+        height: 40px;
+    }
+    .skills-container {
+        width: 60%;
+    }
+    .info-box {
+        width:50%;
+        margin-top: 3.8em;
+    }
+    .skills-and-website-img-container {
+        display: flex;
+    }
+    .web-img {
+        width: 400px;
+        height: 300px;
+    }
+    .about,
+    .projects-title {
+        font-size: 1.8rem;
+    }
+    .about,
+    .projects-title {
+        margin-top: 3em;
+    }
+    .recommendations {
+        width: 50%;
+    }
+    .person-img {
+        width: 75px;
+        height: 75px;
+    }
+    .person-name-job-relation {
+        font-size: 1.2rem;
+    }
+    .person-text {
+        font-size: 1.3rem;
+    }
+    .glide-img {
+        width: 65% !important;
+    }
+    .img-text-box p.img-text {
+        width: 65%;
+        font-size: 1.4rem;
+    }
+    .glide__arrows img {
+        width: 175px;
+        height: 175px;
+    }
+    form#contact {
+        width: 65%;
+    }
+    label[for="Email"] {
+        font-size: 1.4rem;
+    }
+    form#contact div#emailHelp {
+        font-size: 1.4rem;
+    }
+}
