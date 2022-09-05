@@ -179,7 +179,7 @@ hr {
 }
 .modal-container {
     background-color: white;
-    border: 6px solid #dfdfdf;
+    border: 5px solid #e5e5e5;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
