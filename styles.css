@@ -314,17 +314,22 @@ img {
     justify-content: center;
     justify-content: space-evenly;
 }
-.glide__arrows img {
-    width: 100px;
-    height: 100px;
+.glide__arrows svg {
+    width: 40px;
+    height: 40px;
 }
-.glide__arrows button {
-    background-color: transparent;
+.glide__arrows svg {
+    /* background-color: transparent; */
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
+    color: black;
+}
+.glide__arrows button {
+    background-color: transparent;
+    border: none;
     color: black;
 }
 .glide__arrows .glide__arrow {
@@ -712,7 +717,7 @@ textarea {
         font-size: 1.4rem;
     }
     form#contact {
-        margin-top: 2em;
+        margin-top: 4em;
         width: 50%;
     }
     form#contact button {
