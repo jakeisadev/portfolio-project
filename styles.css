@@ -50,7 +50,8 @@ a {
     font-size: 1.8rem;
 }
 nav {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
+    overflow: hidden;
+    z-index: 999;
 }
 nav ul.nav-list {
     display: flex;
@@ -276,6 +277,7 @@ img {
     display: block;
     margin: auto;
     border-radius: 5px;
+    z-index: 1;
 }
 .glide-img {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, 
@@ -434,6 +436,12 @@ footer {
     text-align: center;
     color: #f1f5f9;
 }
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 /* KEYFRAMES */
 /* FADE-IN */
 @keyframes fadeIn {
